@@ -1,0 +1,340 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Nanum+Myeongjo&display=swap');
+
+:root{
+    --rojo: #c5564f;   
+    --rojo-osc:#b14841;
+    --verde:#609736;   
+    --verde-osc:#5F9736;
+	--amarillo: #E2A727;
+    --texto:#ffffff;
+	--font-titulo: "Nanum Myeongjo", serif;
+	--font-texto: "Montagu Slab", serif;
+	--color-negro: #1E1E1E;
+	--amarillo-fondo: #F9EFE4;
+    }
+
+
+
+.titulos {
+	font-family: var(--font-titulo);
+	font-style: 50px;
+	font-weight: bold;
+}
+
+.informacion-general {
+	font-size: 20px;
+	font-family: var(--font-texto);
+}
+
+
+header{
+	background-color: #1E1E1E;
+}
+
+
+
+
+.hero-item {
+	height: 720px !important;
+}
+
+.hero-img{
+	height: 100%;
+	width: inherit;
+	object-fit: cover;
+	filter: brightness(0.3);
+}
+
+
+
+#cta{
+	background-color: var(--amarillo-fondo) !important;
+	padding: 3% 0 ;
+}
+
+#cta img {
+	height: 720px;
+	object-fit: cover;
+}
+
+
+.selecciones {
+  text-align: center;
+  padding: 10% 20px;
+  background-color: #faefe4; 
+}
+
+.cta-t-fondo {
+  background-color: #4d8a42; 
+  color: white;
+  padding: 10px 25px;
+  display: inline-block;
+  border-radius: 8px;
+margin-bottom: 40px;
+	
+}
+
+.card-body {
+	background-color: var(--rojo-osc);
+}
+
+.owl-carousel .item {
+  background-color: #8b1e1e; 
+  border-radius: 10px;
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+.owl-carousel .item img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.owl-title {
+	color: #fff !important;
+  font-size: 30px;
+  padding: 20px 0 ;
+}
+
+.owl-carousel .item .btn {
+  background-color: white;
+  color: #8b1e1e;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-weight: bold;
+  border: none;
+}
+
+.owl-carousel .item .btn:hover {
+  background-color: #f1f1f1;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.owl-dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  background-color: #ddd !important;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.owl-dot.active {
+  background-color: #4d8a42 !important; 
+}
+
+  
+    #info{
+     padding: 2% 0 ;
+		background-color:var(--rojo);
+		margin-bottom: 4%;
+    }
+
+
+    .img-side{
+      position:relative;
+      min-height:380px;
+		background-color:var(--rojo) !important;
+	
+    }
+    .img-side img{
+      position:absolute;
+      inset:0;
+		 min-height:380px;
+      width:100%;
+      height:100%;
+	border-radius: 0 15% 15% 0  ;
+      object-fit:cover;
+		
+
+	
+		
+    }
+    .info-side{
+      color:var(--texto);
+      padding:12px 15px 5%;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+		background-color:var(--rojo) !important
+    }
+
+	.info-titulo{
+		font-family: var(--font-titulo);
+		color: #fff;
+		font-size: 50px;
+		text-align: center;
+		font-weight: bold;
+	
+	
+	}
+   
+    .info-text {
+      padding:5%;
+	font-family: var(--font-texto);
+      font-size: 24px;
+      line-height:1.6;
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 22px;
+      background:var(--verde);
+      color:#fff;
+	font-size: 24px;
+      text-decoration:none;
+      font-weight:600;
+      border-radius:8px;
+      transition: transform .08s ease, background .2s ease;
+      width:max-content;
+		font-family: var(--font-titulo)
+	
+    }
+    .btn:hover{ 
+		background:#466E28; 
+		transform: translateY(-1px); }
+    .badge{
+      position:absolute;
+      left:16px; top:16px;
+      background:rgba(0,0,0,.55);
+      color:#fff;
+      padding:6px 10px;
+      font-size:13px;
+      border-radius:999px;
+      letter-spacing:.3px;
+    }
+    @media (max-width: 860px){
+      .img-side{ min-height:320px; }
+      .info-side{ padding:26px 20px; }
+}
+
+.reserva-header {
+	background-color: var(--verde);
+	color: #fff;
+	text-align: center;
+	padding: 2rem 1rem 1.5rem 1rem;
+}
+.reserva-t {
+	padding-bottom: 20px;
+	font-weight: Bold;
+	letter-spacing: 1px;
+}
+.reserva-p {
+	padding: 15px 0 0.2rem 0;
+	font-size: 20px;
+}
+
+.reservation-bg {
+	background: url("../img/1366_521.jpg") center/cover no-repeat;
+	min-height: 420px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3% 0;
+}
+
+.reservation-form {
+	background: rgba(255,255,255,0.85);
+	border-radius: 1.5rem;
+	box-shadow: 0 4px 24px 0 rgba(0,0,0,0.13);
+	padding: 2rem 2.5rem;
+	max-width: 900px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.reservation-row {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+.reservation-col {
+	flex: 1 1 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+    &:first-child {
+        padding-top: 45px;
+    }
+}
+
+.input-reservacion, .select-reservacion {
+	width: 100%;
+	padding: 0.7rem 1rem;
+	border: 2px solid rgb(132, 7, 7);
+	border-radius: 0.7rem;
+	font-size: 1rem;
+	background: #fff;
+	margin-bottom: 0.5rem;
+	outline: none;
+	transition: border-color 0.2s;
+}
+.input-reservacion:focus, .select-reservacion:focus {
+	border-color: #198754;
+}
+
+.label-reservacion {
+	font-weight: 600;
+	margin-bottom: 0.2rem;
+	color: #222;
+}
+
+.reservation-btn-row {
+	text-align: center;
+	margin-top: 0.5rem;
+}
+.btn-reservar {
+	background-color: rgb(132, 7, 7);
+	color: #fff;
+	border: none;
+	border-radius: 2rem;
+	padding: 0.7rem 2.5rem;
+	font-size: 1.15rem;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+}
+.btn-reservar:hover {
+	background: #a00606;
+	transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 900px) {
+	.reservation-form {
+		padding: 1.2rem 0.7rem;
+	}
+	.reservation-row {
+		gap: 1rem;
+	}
+}
+@media (max-width: 700px) {
+	.reservation-row {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	.reservation-col {
+		gap: 0.7rem;
+        padding-top: 45px;
+	}
+}
+
+footer {
+	padding: 5% 0;
+	background-color: #000;
+	font-family: var(--font-texto);
+	color: var(--amarillo);
+}
+
+.color-icon {
+	color: var(--amarillo);
+}
